@@ -25,9 +25,11 @@ window.onload = function () {
             minimum: 2010,
             maximum: 2019,
             interval: 1,
+            labelFontSize: 10,
       	},
       	axisY: {						
-      		title: "Salary (£)"
+      		title: "Salary (£)",
+            labelFontSize: 10,
       	},
         
 
