@@ -1,0 +1,50 @@
+
+#header{
+    background-color: lightblue;
+    font-size: 32px;
+    padding: 15px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+#headtext{
+    text-align: right;
+}
+
+#menubtn{
+    font-size: 18px;
+    text-align: left;
+}
+
+p{
+    font-size: 20px;
+}
+
+a{
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.formsections{
+    padding: 20px;
+    border-top: 3px lightblue solid;
+    border-left: 3px lightblue solid;
+}
+
+input{
+    padding: 1px;
+    font-size: 18px;
+}
+
+#timescale{
+    padding: 1px;
+    font-size: 18px
+}
+
+#section2{
+    display: none;
+}
+
+#overtimeform{
+    display: none;
+}
