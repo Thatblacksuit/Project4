@@ -48,3 +48,7 @@ input{
 #overtimeform{
     display: none;
 }
+
+.center {
+    text-align: center;
+}

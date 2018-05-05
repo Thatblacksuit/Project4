@@ -28,7 +28,7 @@
         sorry.innerHTML = "Sorry, theres nothing to show yet!";
     };
     }); 
-    fuck this
+    
     </script>
 </head>
 <body>
@@ -37,17 +37,22 @@
     
 <div data-role="page" class="ui-page-theme-b" id="pageone">
     
+<!--
     <div data-role="panel" id="myPanel"> 
     <h2>Where would you like to go?</h2>
+-->
+<!--
         <a href="#pageone">Home</a><br><br>
         <a href="#pagetwo">Gallery</a><br><br>
         <a href="#pagethree">Camera</a><br><br>
         <a href="#chartPage">Graphs</a>
+-->
 
-  </div> 
+<!--  </div> -->
     
   <div data-role="header" id="header">
-      <a href="#myPanel" id="menubtn" class="ui-btn ui-btn-inline ui-corner-all ui-shadow">Menu</a> <span id="headtext">Tax Calculator</span>
+<!--      <a href="#myPanel" id="menubtn" class="ui-btn ui-btn-inline ui-corner-all ui-shadow">Menu</a> -->
+      <span id="headtext">Tax Calculator</span>
 
   </div>
 
@@ -92,6 +97,13 @@
           <br><br><button id="submit" onclick="calculate()">Submit</button>
       </form>
   </div>
+    
+    <div data-role="footer" data-position="fixed" class="ui-bar center">
+        <a href="#pageone" style="width:25%;" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-icon-right">Home</a>
+        <a href="#pagetwo" style="width:25%;" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-icon-right">Gallery</a>
+        <a href="#pagethree" style="width:25%;" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-icon-right">Camera</a>
+        <a href="#chartPage" style="width:25%;" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-icon-right">Graphs</a>
+</div>
 </div> 
     
     
@@ -100,6 +112,7 @@
     
 <div data-role="page" class="ui-page-theme-b" id="pagetwo">
     
+<!--
     <div data-role="panel" id="myPanel"> 
     <h2>Where would you like to go?</h2>
         <a href="#pageone">Home</a><br><br>
@@ -107,9 +120,11 @@
         <a href="#pagethree">Camera</a><br><br>
         <a href="#chartPage">Graphs</a>
   </div> 
+-->
     
   <div data-role="header" id="header">
-      <a href="#myPanel" id="menubtn" class="ui-btn ui-btn-inline ui-corner-all ui-shadow">Menu</a> <span id="headtext">Gallery</span>
+<!--      <a href="#myPanel" id="menubtn" class="ui-btn ui-btn-inline ui-corner-all ui-shadow">Menu</a>-->
+      <span id="headtext">Gallery</span>
 
   </div>
 
@@ -117,7 +132,12 @@
       <p id="sorry"></p>
       <img style="display:none;width:33%;" id="galleryimage" src="" /><br>
   </div>
-
+    <div data-role="footer" data-position="fixed" class="ui-bar center">
+        <a href="#pageone" style="width:25%;" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-icon-right">Home</a>
+        <a href="#pagetwo" style="width:25%;" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-icon-right">Gallery</a>
+        <a href="#pagethree" style="width:25%;" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-icon-right">Camera</a>
+        <a href="#chartPage" style="width:25%;" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-icon-right">Graphs</a>
+</div>
 </div> 
 
     
@@ -128,6 +148,7 @@
     <!--    ****CAMERA PAGE****     -->
     
     <div data-role="page"  class="ui-page-theme-b" id="pagethree">
+<!--
         
     <div data-role="panel" id="myPanel"> 
     <h2>Where would you like to go?</h2>
@@ -136,9 +157,11 @@
         <a href="#pagethree">Camera</a><br><br>
         <a href="#chartPage">Graphs</a>
   </div> 
+-->
         
   <div data-role="header" id="header">
-          <a href="#myPanel" id="menubtn" class="ui-btn ui-btn-inline ui-corner-all ui-shadow">Menu</a> <span id="headtext">Camera</span>
+<!--          <a href="#myPanel" id="menubtn" class="ui-btn ui-btn-inline ui-corner-all ui-shadow">Menu</a> -->
+      <span id="headtext">Camera</span>
 
   </div>
 
@@ -153,7 +176,12 @@
         
 
   </div>
-
+    <div data-role="footer" data-position="fixed" class="ui-bar center">
+        <a href="#pageone" style="width:25%;" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-icon-right">Home</a>
+        <a href="#pagetwo" style="width:25%;" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-icon-right">Gallery</a>
+        <a href="#pagethree" style="width:25%;" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-icon-right">Camera</a>
+        <a href="#chartPage" style="width:25%;" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-icon-right">Graphs</a>
+</div>
 </div> 
     
     
@@ -165,16 +193,19 @@
     
     <div data-role="page" class="ui-page-theme-b" id="chartPage">
     
-    <div data-role="panel" id="myPanel"> 
+<!--    <div data-role="panel" id="myPanel"> -->
+<!--
     <h2>Where would you like to go?</h2>
         <a href="#pageone">Home</a><br><br>
         <a href="#pagetwo">Gallery</a><br><br>
         <a href="#pagethree">Camera</a><br><br>
         <a href="#chartPage">Graphs</a>
   </div> 
+-->
     
   <div data-role="header" id="header">
-         <a href="#myPanel" id="menubtn" class="ui-btn ui-btn-inline ui-corner-all ui-shadow">Menu</a> <span id="headtext">Graphs</span>
+<!--         <a href="#myPanel" id="menubtn" class="ui-btn ui-btn-inline ui-corner-all ui-shadow">Menu</a> -->
+      <span id="headtext">Graphs</span>
 
   </div>
 
@@ -183,7 +214,12 @@
       		<div id="chartContainer" style="height: 500px; width: 100%; !important;">
 			</div>
   </div>
-
+    <div data-role="footer" data-position="fixed" class="ui-bar center">
+        <a href="#pageone" style="width:25%;" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-icon-right">Home</a>
+        <a href="#pagetwo" style="width:25%;" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-icon-right">Gallery</a>
+        <a href="#pagethree" style="width:25%;" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-icon-right">Camera</a>
+        <a href="#chartPage" style="width:25%;" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-icon-right">Graphs</a>
+</div>
     </div>    
 </body>
 </html>
