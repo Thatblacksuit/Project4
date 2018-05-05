@@ -1,6 +1,6 @@
 
 #header{
-    background-color: lightblue;
+/*    background-color: lightblue;*/
     font-size: 32px;
     padding: 15px;
     vertical-align: middle;
@@ -27,7 +27,7 @@ a{
 
 .formsections{
     padding: 20px;
-    border-top: 3px lightblue solid;
+    border-bottom: 3px lightblue solid;
     border-left: 3px lightblue solid;
 }
 
