@@ -155,5 +155,6 @@ if (regtotal <= 34500) {
 grandtotal = regtotal + OTtotal;   
     window.alert("Your salary yearly salary before tax is " + regtotal +"\n\nYour salary this year including overtime is :" + grandtotal +"\n\nYour total salary after tax: " + taxtotal);
     Document.getElementById("inputs").reset();
+
 };
 
