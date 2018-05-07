@@ -11,32 +11,22 @@
     <script type="text/javascript" src="canvasjs-1.5.6/canvasjs.min.js"></script>
 	<script src="jquerymobile/jquery-1.11.1.min.js"></script>
 	<script src="jquerymobile/jquery.mobile-1.4.5.min.js"></script>
-<script src="cordova.js" type="text/javascript"></script>
-<script src="js/Ractive.js"></script>
-<script src="js/camera.js" type="text/javascript"></script>
-<!--<script src="js/saving.js" type="text/javascript"></script>-->
+    <script src="cordova.js" type="text/javascript"></script>
+    <script src="js/Ractive.js"></script>
+    <script src="js/camera.js" type="text/javascript"></script>
     <script src="js/Calculations.js"></script>
     <script src="js/chart.js"></script>
 
     
 <title>Tax Calculator</title>
-    <script>
-    $(document).ready(function() {
-    var displaygallery = document.getElementById('galleryimage');
-    var sorry = document.getElementById('sorry');
-    
-    if (displaygallery.src = "") {
-        sorry.innerHTML = "Sorry, theres nothing to show yet!";
-    };
-    }); 
-    
-    </script>
 </head>
 <body>
-
+    
     <!--    ****CALCULATIONS PAGE****   -->
     
 <div data-role="page" class="ui-page-theme-b" id="pageone">
+    
+<!--    Old navigational menu-->
     
 <!--
     <div data-role="panel" id="myPanel"> 
@@ -95,11 +85,11 @@
       <p1>Overtime Hourly Wage:</p1><input type="number" id="OvertimeWage" placeholder="0">
           
        </div>
-          <br><br><button id="submit" onclick="calculate()">Submit</button>
+          <br><br><button id="submit" onclick="calculate()">Submit</button>  <!--On submit performs the calculate function-->
       </form>
 
   </div>
-    
+    <!--Contains footer navigational links-->
     <div data-role="footer" data-position="fixed" class="ui-bar center">
         <a href="#pageone" style="width:10%; font-size: 9px; height: 30px;" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-icon-right"><i class="fas fa-home" style="font-size: 18px;"></i><br>Home</a>
 <!--        <a href="#pagetwo" style="width:10%; font-size: 9px; height: 30px;" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-icon-right"><i class="fas fa-images" style="font-size: 18px;"></i><br>Gallery</a>-->
@@ -110,7 +100,7 @@
     
     
     
-    <!--    ****GALLERY PAGE****    -->
+    <!--    ****REMOVED GALLERY PAGE****    -->
     
 <!--<div data-role="page" class="ui-page-theme-b" id="pagetwo">-->
     
@@ -175,9 +165,9 @@
   <div data-role="content" class="ui-content">
        
        <label for="phonegapcamera"> Take a photo of any invoices or important doocuments which may be useful to you.<br><br>Your photos will be saved to the gallery.</label>
-       	<button id="phonegapcamera" onclick="capturePhoto();">Take Photo</button> <br>
+       	<button id="phonegapcamera" onclick="capturePhoto();">Take Photo</button> <br>      <!--on click performs the capture Photo function-->
        
-		<img style="display:none;width:200px;height:200px;" id="image" src="" /><br>
+		<img style="display:none;width:200px;height:200px;" id="image" src="" /><br>      <!-- displays the image once it has been captured -->
 <!--
         <label for="camerasave">Click here to save the image to the gallery.</label>
         <button id="camerasave">Save Photo</button>
@@ -219,7 +209,7 @@
   </div>
 
   <div data-role="content" class="ui-content" style="width: 100% !important;">
-      
+<!--            Area which the graph shall be rendered-->
       		<div id="chartContainer" style="height: 500px; width: 100%; !important;">
 			</div>
   </div>

@@ -6,46 +6,41 @@ var startTime;
 window.onload = function () {
 	
 	//store start time in unixtime 
-//	startTime = Date.now();
+
 	
 	//set uplistener for button
 	$('#submit').on('click', function() {
 	
-		updateChart(taxtotal);
+		updateChart(taxtotal);        //when submit button is clicked, chart updates
 		
 	});
 	
 	//setup chart
     chart = new CanvasJS.Chart("chartContainer",{
       	title :{
-      		text: "Your Salary Over Time"
+      		text: "Your Salary Over Time"       //sets chart title
       	},
       	axisX: {						
-      		title: "Year",
-            minimum: 2010,
-            maximum: 2019,
-            interval: 1,
-            labelFontSize: 10,
+      		title: "Year",                      //sets axis x title
+            minimum: 2010,                      //sets axis x minimum value
+            maximum: 2019,                      //sets axis x maxiumum value
+            interval: 1,                        //sets the interval between each point
+            labelFontSize: 10,                  //sets axis x font size
       	},
       	axisY: {						
-      		title: "Salary (£)",
-            labelFontSize: 10,
+      		title: "Salary (£)",                //sets axis y title
+            labelFontSize: 10,                  //sets axis y font size
       	},
         
 
       	data: [{
-      		type: "line",
-      		dataPoints : dps
+      		type: "line",                       //sets graph type
+      		dataPoints : dps                    //declares datapoints
       	}],  
         
-//        XAxes: [{
-//      		ticks:{
-//                
-//            }
-//      	}],
    	        options: {
-            responsive: true,
-            maintainAspectRatio: false,
+            responsive: true,                   //enables responsive design
+            maintainAspectRatio: false,         //disables maintenance of aspect ratio
         }
     
     });
@@ -54,26 +49,17 @@ window.onload = function () {
 
 function updateChart(taxtotal) {
       var yearly = document.getElementById('year-range').value;
-      	//set new random y values
-      	yVal = taxtotal;
+      	//set new y value
+      	yVal = taxtotal;              
 		
 		//x value is time since start 
 		xVal = yearly;
-		//concert from milliseocnds to seconds (divide by a thousand)
-//		xVal = xVal / 1000;
       	
 		//add them to the data points to draw
 		dps.push({x: xVal,y: yVal});
-      	
-		//don't let the chart get too big 
-		//if there are more than 100 data points then start removing older data points
-//      	if (dps.length >  10 )
-//      	{
-//      		dps.shift();				
-//      	}
 
-		//redraw the chart
 
+		//redraw the chart after an interval of 10ms
         setInterval(function(){ wait() }, 10);
               		
         function wait() {

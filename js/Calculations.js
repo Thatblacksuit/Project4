@@ -1,4 +1,5 @@
 window.onload = function(){
+//    Declaring varaiables 
     var rate = document.getElementById('timescale').value;
     var section2 = document.getElementById('section2');
     var section3 = document.getElementById('overtimeform');
@@ -9,16 +10,17 @@ window.onload = function(){
     var years = document.getElementById('year-range').value;
     var grandtotal = 0;
     
+    //hides the area unless hourly wage is selected on load
 if(rate == "8760"){
     section2.style.display = "block";
 } else {
     section2.style.display = "none";
 };
     
-        var section3 = document.getElementById('overtimeform');
+    var section3 = document.getElementById('overtimeform');
     var OThours = document.getElementById('OvertimeHours');
     var OTwage = document.getElementById('OvertimeWage');
-    
+    //hides the area and clears fields unless overtime is selected on load
     if(document.getElementById("overtime").checked == true){
        section3.style.display = "block";
    } else {
@@ -27,7 +29,7 @@ if(rate == "8760"){
         OTwage.value = "";
    }
 }
-
+    //hides the area unless hourly wage is selected when the hourly button is pressed
 function disablesection2() {
 var rate = document.getElementById('timescale').value;
 var section2 = document.getElementById('section2');
@@ -39,7 +41,7 @@ if(rate == "8760"){
 };
 };
 
-
+    //hides the area and clears fields unless overtime is selected when the overtime button is pressed
 function disableovertime() {
     var section3 = document.getElementById('overtimeform');
     var OThours = document.getElementById('OvertimeHours');
@@ -62,9 +64,9 @@ var totaldays = document.getElementById('DaysWorked').value;
 var OThours = document.getElementById('OvertimeHours').value;
 var OTwage = document.getElementById('OvertimeWage').value;
 var years = document.getElementById('year-range').value;
-    
-
 var OTtotal = OTwage * OThours;
+    
+    //calculations of tax on submit button click
     
 if (rate == 8760){
     regtotal = ((salary * totalhours) * totaldays) * 52;
@@ -151,7 +153,7 @@ if (regtotal <= 34500) {
 }
 }
     
-    
+    //display results of calculations in alert box and resets input field values.
 grandtotal = regtotal + OTtotal;   
     window.alert("Your salary yearly salary before tax is " + regtotal +"\n\nYour salary this year including overtime is :" + grandtotal +"\n\nYour total salary after tax: " + taxtotal);
     Document.getElementById("inputs").reset();

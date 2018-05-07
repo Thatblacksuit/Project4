@@ -8,21 +8,17 @@ function onDeviceReady() {
     
 }
 
-function capturePhoto() {
+function capturePhoto() {   //determines whether an image was successfully captured
 	navigator.camera.getPicture(onPhotoDataSuccess, onFail, { quality: 50,
 	destinationType: destinationType.DATA_URL });
 }
 	
 function onPhotoDataSuccess(imageData) {
-	var image = document.getElementById('image');
-	image.style.display = 'block';
-	image.src = "data:image/jpeg;base64," + imageData;
-    
-    var galleryimage = document.getElementById('galleryimage');
-	galleryimage.style.display = 'block';
-	galleryimage.src = "data:image/jpeg;base64," + imageData;
+	var image = document.getElementById('image');  //declares image section
+	image.style.display = 'block';         //styles the image to give it display block
+	image.src = "data:image/jpeg;base64," + imageData;     //determines source of image
 }
 
 function onFail(message) {
-      alert('Failed because: ' + message);
+      alert('Failed because: ' + message);      //error recieved if the image could not be captured
 }
