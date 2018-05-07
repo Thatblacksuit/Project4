@@ -61,7 +61,7 @@
       <p> Welcome to the Tax Calculator!</p>
       <form id="inputs"><div class="formsections">
       <p1>Please Enter your Salary (£):</p1><br>
-      <input id="salary" placeholder='Do NOT use any currency symbols ("£", "$", etc.)'>
+      <input type="number" id="salary" placeholder='Do NOT use any currency symbols ("£", "$", etc.)'>
       
       <select onclick="disablesection2()"id="timescale">
           <option value="1">Yearly</option>
@@ -83,16 +83,16 @@
       </select>
           </div><br><br>
       <div class="formsections" id="section2">
-        <p1>Hours Worked per day: </p1><input id="HoursWorked" placeholder="0"><br>
-        <p1>Days Worked per week: </p1><input id="DaysWorked" placeholder="0">
+        <p1>Hours Worked per day: </p1><input type="number" id="HoursWorked" placeholder="0"><br>
+        <p1>Days Worked per week: </p1><input type="number" id="DaysWorked" placeholder="0">
           </div><br><br>
           <div class="formsections">
     <p1>Have you worked any overtime?</p1><br><br>
     <input id="overtime" type="checkbox" onclick="disableovertime()">
           </div><br><br>
       <div id="overtimeform" class="formsections">
-      <p1>Overtime Worked (Hours) per year:</p1><input id="OvertimeHours" placeholder="0"><br>
-      <p1>Overtime Hourly Wage:</p1><input id="OvertimeWage" placeholder="0">
+      <p1>Overtime Worked (Hours) per year:</p1><input type="number" id="OvertimeHours" placeholder="0"><br>
+      <p1>Overtime Hourly Wage:</p1><input type="number" id="OvertimeWage" placeholder="0">
           
        </div>
           <br><br><button id="submit" onclick="calculate()">Submit</button>
